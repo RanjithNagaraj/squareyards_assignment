@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" contenxt="">
+
+  <title>Coordinate Locator</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h4 style="color: orange	">Coordinate Locator</h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <!--<a class="nav-link" href="#"><img src="{% static 'images/hcl.png' %}" / height=20px></a>-->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5"></h1>
+		<!-- -->
+   <!-- alerts -->
+    {% include 'partials/alerts.html' %}
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+               
+                {% if '/' in  request.path %}
+                <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Dump Upload</a>
+				{% else %}
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Dump Upload</a>
+                {% endif %}
+                
+			</div>
+		</nav>
+
+		
+            {% if '/' in  request.path %}
+		<div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            {% else %}
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            {% endif %}
+			<!-- -->
+				<form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+					<div class="form-group">
+						<br>
+            <input type="file" name ="myfile" class="form-control-file" id="dump">
+            <div class = "row">
+            <p style="float:left;">Please upload only <b>.xls or .xlsx </b> files</p></div>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+                
+			</div>
+           
+			
+			<!-- -->
+			</div>
+		</div>
+
+	  <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.slim.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %} "></script>
+</body>
+
+</html>

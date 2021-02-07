@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BT Real Estate {% block title %}{% endblock %}</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+</head>
+
+<body>
+ <!-- Top Bar -->
+{% include 'partials/_topbar.html' %}
+ <!-- Navbar -->
+{% include 'partials/_navbar.html' %}
+  <!-- main content -->
+  {% block content %}
+
+  {% endblock %}
+ <!-- Footer -->
+{% include 'partials/_footer.html' %}
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/main.js' %} "></script>
+<script src="{% static 'js/lightbox.min.js' %} "></script>
+</body>
+</html>

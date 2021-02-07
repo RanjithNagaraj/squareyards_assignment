@@ -1,0 +1,51 @@
+#header
+{
+height :50px;
+background : #10284e;
+color : #fff;
+}
+
+#branding h1
+{
+color :#fff;
+}
+
+a:link,
+a:visited,
+a:hover{
+color:#10284e;
+}
+
+div.breadcrumbs{
+background: #30caa0;
+}
+
+div.breadcrumbs a{
+color: #333;
+}
+.module h2, .module caption, .inline-group h2 {
+background : #30caa0;
+}
+
+#nav-sidebar{
+margin:25px 50px 75px 100px;}
+
+div.content h1{
+color: black;
+}
+
+.object-tools a:link, .object-tools a:visited
+{
+font-weight:600;
+background:#333;
+}
+.button, input[type=submit], input[type=button], .submit-row input, a.button
+{
+background:#10284e;
+}
+
+#changelist-filter
+{
+margin-top : 50px;
+}
+
