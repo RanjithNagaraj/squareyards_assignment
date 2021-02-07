@@ -12,6 +12,12 @@ _Steps to run this application_
 4. Finally run this command  ******```python manage.py runserver ```****** inside the root directory to up the WSGI Server
 5. Once the server is up and running you could able to upload the input file
 
-URL: ******``` http://127.0.0.1:8000/geocoding/ ```******
+``` URL: ``` ******``` http://127.0.0.1:8000/geocoding/ ```******
+
+``` INPUTFILE:  ``` https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/geocodeinputs.xlsx
+
 
 ###### Landing Page
+
+![Landingpage](https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/landingpage.png)
+
