@@ -25,11 +25,11 @@ _Steps to run this application_
 ![Landingpage](https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/landingpage.png)
 
 
-###### Output PNG
+###### Output Page
 
 ![outputpage](https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/output.png)
 
 
 
 
-``` OUTPUTFILE:  ```  ******``` https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/squareyards/lat_lng.xls ```******
+``` OUTPUTFILE:  ```  https://github.com/RanjithNagaraj/squareyards_assignment/blob/master/squareyards/lat_lng.xls 
