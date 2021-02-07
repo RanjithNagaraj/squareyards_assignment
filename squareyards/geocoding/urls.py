@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
 
-    path('', views.coordinates, name='coordinates'),
+    path('', views.get_coordinate, name='get_coordinate'),
    
    
 ]
